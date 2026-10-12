@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACT 3"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Calculator"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate your Body Mass Index"
+            android:textSize="16sp"
+            android:textColor="#777777"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Calculator Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR INFORMATION"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <EditText
+                android:id="@+id/weightInput"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Weight (kg)"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:backgroundTint="#333333"
+                android:textColor="#333333"
+                android:textColorHint="#333333"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/heightInput"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Height (cm)"
+                android:textColor="#333333"
+                android:backgroundTint="#333333"
+                android:textColorHint="#333333"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="CALCULATE BMI"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <!-- Result -->
+
+        <LinearLayout
+            android:id="@+id/resultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="25dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/bmiResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI: -"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+
+            <Button
+                android:id="@+id/previousBmiButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Previous" />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/bmiCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category: -"
+                android:textSize="18sp"
+                android:textColor="#666666"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/bmiGuidance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:text="Your weight guidance will appear here."
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

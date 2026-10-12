@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="32dp">
+    <!-- Input field for Name -->
+
+    <TextView
+        android:id="@+id/playerId"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textColor="#000000"
+        android:text = "player" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:hint="Enter Name"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="textPersonName" />
+
+    <!-- Button to pick color -->
+    <Button
+        android:id="@+id/btn_pick_color"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+
+        android:backgroundTint="#CCCCCC" />
+</LinearLayout>
